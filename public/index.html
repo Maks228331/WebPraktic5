@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Список завдань (To-Do)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Список завдань</h1>
+
+    <form id="task-form" class="task-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Введіть нове завдання..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Додати</button>
+    </form>
+
+    <div class="status-bar">
+      <span>Усього завдань: <strong id="task-count">0</strong></span>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty-message" class="empty-message">Список завдань порожній</p>
+  </main>
+
+  <script src="type.js"></script>
+</body>
+</html>
